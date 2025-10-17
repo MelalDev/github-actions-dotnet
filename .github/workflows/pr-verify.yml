@@ -1,5 +1,5 @@
 
-name: PR Verify
+name: PR Verify workflow
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: PR Build Job
+    name: PR verify Job
     runs-on: ubuntu-latest
 
     steps:
