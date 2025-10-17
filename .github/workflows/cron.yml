@@ -1,14 +1,14 @@
 
-name: run every 5 minute workflow
+name: run every hour workflow
 
 on:
    schedule:
-    - cron: '*/5 * * * *'
+    - cron: '30 * * * *'
 
 
 jobs:
   cron:
-    name: run every 5 minutes job
+    name: run every hour job
     runs-on: ubuntu-latest
 
     steps:
