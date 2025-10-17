@@ -1,0 +1,16 @@
+
+name: run every hour workflow
+
+on:
+   schedule:
+    - cron: '30 * * * *'
+
+
+jobs:
+  cron:
+    name: run every hour job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hellow world
+        run: echo "hello world"
